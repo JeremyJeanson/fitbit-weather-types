@@ -1,0 +1,21 @@
+{
+  "name": "fitbit-weather-types",
+  "version": "0.0.1",
+  "description": "Types definitions to use fitbit-weather with TypeScript",
+  "author": "Jérémy Jeanson (https://www.bugshunter.net)",
+  "license": "MIT",
+  "homepage": "https://github.com/JeremyJeanson/fitbit-weather-types",
+  "bugs": {
+    "url": "https://github.com/JeremyJeanson/fitbit-weather-types/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JeremyJeanson/fitbit-weather-types.git"
+  },
+  "keywords": [
+    "fitbit",
+    "weather",
+    "typescript",
+    "types"
+  ]
+}
