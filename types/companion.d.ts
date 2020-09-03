@@ -1,7 +1,15 @@
-declare module "simple-fitbit-settings/companion" {
-    interface CompanionSettings {
-        initialize(defaultSettings: any): void;
-        setDefaultSetting(key: string, value: any): void;
+declare module "fitbit-weather/companion" {
+    function setup(configuration: Configuration): void;
+
+    interface Configuration {
+        provider: number;
+        apiKey: string;
     }
-    const companionSettings: CompanionSettings;
+
+    interface ProvidersCodes {
+        openweathermap: number;
+        darksky: number;
+        weatherbit: number;
+    }
+    const Providers:ProvidersCodes;
 }

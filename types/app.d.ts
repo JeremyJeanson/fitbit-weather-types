@@ -1,6 +1,16 @@
-declare module "simple-fitbit-settings/app" {
-    interface AppSettings {
-        initialize<T>(settings: T, callback: (newSettings: T) => void): void;
+declare module "fitbit-weather/app" {
+    function fetch(age: number): Promise<Result>;
+
+    interface Result {
+        temperatureC: number;
+        temperatureF: number;
+        location: string;
+        description: string;
+        isDay: boolean;
+        conditionCode: number;
+        realConditionCode: string;
+        sunrise: number;
+        sunset: number;
+        timestamp: number;
     }
-    const appSettings:AppSettings;
 }
